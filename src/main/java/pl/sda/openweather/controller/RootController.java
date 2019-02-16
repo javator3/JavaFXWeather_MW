@@ -8,6 +8,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import pl.sda.openweather.WeatherService;
 import pl.sda.openweather.model.Weather;
 
@@ -37,6 +39,9 @@ public class RootController implements Initializable {
     @FXML
     private Label tempFeelValue;
 
+    @FXML
+    private ImageView iconURL;
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -51,6 +56,9 @@ public class RootController implements Initializable {
         Weather weather = weatherService.getCityWeather(city.getText());
         tempValue.setText(String.valueOf(weather.getCurrent().getTemp_c()));
         tempFeelValue.setText(String.valueOf(weather.getCurrent().getFeelslike_c()));
+
+        Image image = new Image("http:" + weather.getCurrent().getCondition().getIcon());
+        iconURL.setImage(image);
 
 
     }
