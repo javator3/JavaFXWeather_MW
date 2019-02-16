@@ -1,8 +1,6 @@
 package pl.sda.openweather.controller;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -57,7 +55,8 @@ public class RootController implements Initializable {
         tempValue.setText(String.valueOf(weather.getCurrent().getTemp_c()));
         tempFeelValue.setText(String.valueOf(weather.getCurrent().getFeelslike_c()));
 
-        Image image = new Image("http:" + weather.getCurrent().getCondition().getIcon());
+        Image image = new Image("http:" + weather.getCurrent().getCondition().getIcon(),
+                true);
         iconURL.setImage(image);
 
 

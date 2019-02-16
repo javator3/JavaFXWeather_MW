@@ -63,12 +63,12 @@
                <font>
                   <Font name="Kannada MN" size="22.0" />
                </font></Label>
-            <TextField fx:id="city" layoutX="230.0" layoutY="51.0" />
-            <Label fx:id="temp" layoutX="121.0" layoutY="142.0" text="Temperatura" />
-            <Label fx:id="tempFeel" layoutX="121.0" layoutY="186.0" text="Temperatura odczuwalna" />
-            <Label fx:id="tempValue" layoutX="423.0" layoutY="142.0" prefHeight="17.0" prefWidth="71.0" text="0 Celsjusza" />
-            <Label fx:id="tempFeelValue" layoutX="423.0" layoutY="186.0" prefHeight="17.0" prefWidth="71.0" text="0 Celsjusza" />
-            <ImageView fx:id="iconURL" fitHeight="94.0" fitWidth="109.0" layoutX="494.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true" />
+            <TextField fx:id="city" layoutX="230.0" layoutY="51.0" onAction="#setCity"  />
+            <Label fx:id="temp" layoutX="70.0" layoutY="134.0" text="Temperatura" />
+            <Label fx:id="tempFeel" layoutX="70.0" layoutY="169.0" text="Temperatura odczuwalna" />
+            <Label fx:id="tempValue" layoutX="262.0" layoutY="134.0" prefHeight="17.0" prefWidth="71.0" text="0 Celsjusza" />
+            <Label fx:id="tempFeelValue" layoutX="262.0" layoutY="169.0" prefHeight="17.0" prefWidth="71.0" text="0 Celsjusza" />
+            <ImageView fx:id="iconURL" fitHeight="94.0" fitWidth="109.0" layoutX="427.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true" />
       </children>
     </AnchorPane>
   </children>

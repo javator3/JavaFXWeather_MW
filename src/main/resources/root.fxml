@@ -63,7 +63,7 @@
                <font>
                   <Font name="Kannada MN" size="22.0" />
                </font></Label>
-            <TextField fx:id="city" layoutX="230.0" layoutY="51.0" />
+            <TextField fx:id="city" layoutX="230.0" layoutY="51.0" onAction="#setCity"  />
             <Label fx:id="temp" layoutX="70.0" layoutY="134.0" text="Temperatura" />
             <Label fx:id="tempFeel" layoutX="70.0" layoutY="169.0" text="Temperatura odczuwalna" />
             <Label fx:id="tempValue" layoutX="262.0" layoutY="134.0" prefHeight="17.0" prefWidth="71.0" text="0 Celsjusza" />
